@@ -102,6 +102,9 @@ Vue.use(datePicker);
 
 Vue.use(VeeValidate);
 
+import vSelect from 'vue-select'
+Vue.component('v-select', vSelect)
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

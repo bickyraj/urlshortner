@@ -1,0 +1,298 @@
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('/laravelapps/laravel5/demo/public/fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/laravelapps/laravel5/demo/public/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Racing-Sans';
+    src: url('/laravelapps/laravel5/demo/public/fonts/racing_sans_one/RacingSansOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Russo';
+    src: url('/laravelapps/laravel5/demo/public/fonts/russo_one/RussoOne-Regular.ttf');
+}
+
+body {
+  margin: 0px !important;
+}
+
+h3 {
+  font-family: 'Roboto-Thin';
+}
+
+.login-background {
+  height: 100vh;
+  background-image: url("/laravelapps/laravel5/demo/public/img/wallpapers/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.transparent-background {
+  position: absolute;
+    width: 100%;
+    height: 100vh;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    z-index: 10;
+    background-color: rgba(129, 153, 187, 0.2);
+}
+
+.diagonal-block1 {
+    z-index: 20;
+    left: -212px;
+    width: 48%;
+    height: 100vh;
+    position: fixed;
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    background: #bf5757ed;
+}
+
+.login-container {
+  top: 20%;
+    float: left;
+    background-color: white;
+    width: 360px;
+    position: relative;
+    z-index: 20;
+    left: 8%;
+
+    input {
+      border-radius: 0px;
+      font-size: 14px;
+      font-family: "Roboto-Light";
+      letter-spacing: 0.1px;
+    }
+
+  h3 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0px 12px 0px;
+    color: #131313;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 12px;
+  }
+}
+
+.diagonal-block {
+/*  position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 100vh solid rgba(41, 41, 41, 0.91);
+    border-right: 46vh solid rgba(255, 0, 0, 0);
+    border-left: 45vh solid rgba(53, 219, 193, 0.73);*/
+}
+
+.login-page-right-container {
+  position: relative;
+  overflow: hidden;
+  float: right;
+  color: white;
+  width: 600px;
+  height: 100vh;
+  display: block;
+  /*background-color: red;*/
+
+  .login-page-title {
+    margin-top: 30%;
+    font-size: 62px;
+    font-family: "Russo";
+    color: white;
+    letter-spacing: 2px;
+    background-color: rgba(14, 14, 14, 0.86);
+    padding: 0px 42px;
+    font-style: italic;
+
+    &::first-letter {
+      color: #396a9f;
+    }
+  }
+
+  small {
+    font-size: 14px;
+    letter-spacing: 14px;
+    font-style: italic;
+    margin-right: 100px;
+    float: right;
+  }
+}
+
+.login-app-logo {
+  right: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.login-container {
+  color: #e6ebf1;
+  padding: 30px 10px 40px;
+  background-color: #363a3f;
+  height: auto;
+  overflow: hidden;
+}
+.padding-0 {
+    padding: 0px !important;
+}
+
+.login-title {
+  width: 232px;
+  padding: 32px 52px;
+  position: absolute;
+  widows: auto;
+  background-color: #e66c4a;
+  color: #f9f9f9;
+  text-transform: uppercase;
+  left: 10%;
+  top: 0%;
+  font-size: 32px;
+  z-index: 1;
+  font-weight: 700;
+}
+.login-bg {
+  width: 100%;
+  overflow: hidden;
+}
+.login-form-div {
+  >form {
+    input {
+      -webkit-text-fill-color: #c4c9cf !important;
+      background-color: #363a3f;
+      padding: 5px 5px;
+      border-radius: 0px;
+      border: none;
+      box-shadow: none;
+      border-bottom: 1px solid #4c4c4c;
+      
+      &:-webkit-autofill {
+          -webkit-text-fill-color: #c4c9cf !important;
+          -webkit-box-shadow:0 0 0 50px #363a3f inset;
+          background-color: white !important;
+          &:focus {
+            -webkit-text-fill-color: #c4c9cf !important;
+            -webkit-box-shadow:0 0 0 50px #363a3f inset;
+          }
+      }
+      
+        &:focus {
+          background-color: #363a3f;
+          outline: none !important;
+          box-shadow: none;
+        }
+    }
+
+    .form-title {
+      margin-bottom: 10px;
+    }
+
+    .form-actions {
+      margin-bottom: 15px;
+    }
+
+    .btn-submit {
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        color: white;
+        background-color: #396a9f;
+        -webkit-transition: box-shadow linear .2s;
+        -o-transition: box-shadow linear .2s;
+        transition: box-shadow linear .2s;
+        font-size: 12px;
+        font-weight: 600;
+        text-indent: 0px;
+        text-shadow: none;
+        text-rendering: auto;
+
+        &:hover {
+          background-color: #4470ce;
+          box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.26);
+        }
+    }
+  }
+}
+
+.cbx {
+  margin: auto;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+.cbx span {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:first-child {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  transform: scale(1);
+  vertical-align: middle;
+  border: 1px solid #4b83a9;
+  transition: all 0.2s ease;
+}
+.cbx span:first-child svg {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+
+.cbx span:first-child:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #4b83a9;
+  display: block;
+  transform: scale(0);
+  opacity: 1;
+  border-radius: 50%;
+}
+.cbx span:last-child {
+  padding-left: 3px;
+}
+.cbx:hover span:first-child {
+  border-color: #4b83a9;
+}
+
+.inp-cbx:checked + .cbx span:first-child {
+  background: #4b83a9;
+  border-color: #4b83a9;
+  animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+.inp-cbx:checked + .cbx span:first-child:before {
+  transform: scale(3.5);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.forget-password-block {
+  padding-top: 2px;
+}

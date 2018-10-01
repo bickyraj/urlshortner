@@ -1,0 +1,528 @@
+button:focus {
+  outline: none !important;
+}
+
+.trump-navbar {
+  -webkit-box-shadow: 0px -6px 20px -2px black;
+          box-shadow: 0px -6px 20px -2px black;
+  border-bottom: none !important;
+}
+
+.trump-navbar .navbar-brand {
+  border-bottom: none !important;
+}
+
+.navbar-toggler-icon:focus {
+  outline: none !important;
+}
+
+.padding-0 {
+  padding: 0px !important;
+}
+
+.trump-btn-blue {
+  -webkit-box-shadow: 0px 4px 6px -4px black;
+          box-shadow: 0px 4px 6px -4px black;
+  background-color: #5263ff;
+  border-radius: 100px !important;
+  color: white;
+}
+
+.router-link-exact-active {
+  background-color: #384c57  !important;
+  color: white !important;
+}
+
+.router-link-exact-active > i {
+  color: white !important;
+}
+
+.trump-card {
+  -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.03);
+  border: none !important;
+}
+
+.trump-card .card-title {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebebeb;
+  position: relative;
+}
+
+.trump-card .card-title:before {
+  content: "";
+  position: absolute;
+  width: 4%;
+  height: 1px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 2px solid #44cebf;
+}
+
+.trump-card .card-title > .caption {
+  display: inline-block;
+}
+
+.trump-card .card-title > .caption h5 {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #29363d;
+}
+
+.trump-card .card-title > .caption h5 > i.fas,
+.trump-card .card-title > .caption h5 > i.fab {
+  color: #536c79;
+  font-size: 14px;
+}
+
+.trump-card .card-title .card-title-actions {
+  float: right;
+}
+
+.trump-table tr {
+  -webkit-box-shadow: 0px 3px 17px -4px #eaeaea;
+          box-shadow: 0px 3px 17px -4px #eaeaea;
+}
+
+.trump-table td {
+  border-top: 1px solid #dadada !important;
+}
+
+.trump-table th {
+  color: #5f5f5f;
+  /*border-bottom: 2px solid #ebebeb !important;*/
+  /*border-top: 1px solid #ebebeb !important;*/
+  border: transparent !important;
+  font-weight: 600;
+}
+
+.swal2-popup .swal2-title {
+  font-size: 17px !important;
+  font-weight: normal !important;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.login-container-row {
+  height: 100%;
+}
+
+.position-ref {
+  position: relative;
+}
+
+.flex-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.error-title {
+  color: #636b6f;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 32px;
+}
+
+.custom-input-error {
+  margin-top: 6px;
+  color: #d80808;
+  display: block;
+}
+
+.custom-form h6 {
+  color: #384c57;
+}
+
+.custom-form-image-preview {
+  width: 150px;
+  height: 150px;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.button-group > button {
+  display: inline-block !important;
+}
+
+.custom-client-detail-card {
+  margin-top: 51px !important;
+}
+
+.custom-client-detail-card > .card-body {
+  padding-top: 122px;
+}
+
+.custom-client-detail-card > .card-body > .card-title {
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.custom-client-detail-card > .card-body > .card-title i.fa-user-shield {
+  color: #d2b522 !important;
+}
+
+.custom-client-detail-attributes .card {
+  border-radius: 3px;
+  text-align: center;
+  border: 2px solid #f3f3f3;
+  /* box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.03); */
+}
+
+.custom-client-detail-attributes .card i {
+  font-size: 32px;
+}
+
+.custom-client-detail-attributes .yenkii-attribute-navigation {
+  color: #6e6e6e;
+}
+
+.custom-client-detail-attributes .yenkii-attribute-navigation:hover {
+  color: #2090d0;
+  text-decoration: none;
+}
+
+.custom-client-detail-attributes .yenkii-attribute-navigation:hover > .card {
+  border-color: #9bcae5;
+}
+
+.yenkii-side-modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.580392);
+  z-index: 9999;
+  top: 0px;
+  right: 0px;
+}
+
+.yenkii-side-modal.animated {
+  -webkit-animation-duration: .2s !important;
+          animation-duration: .2s !important;
+}
+
+.yenkii-side-modal .animated {
+  -webkit-animation-duration: .6s !important;
+          animation-duration: .6s !important;
+}
+
+.yenkii-side-modal > .yenkii-side-modal-container {
+  overflow-y: scroll;
+  float: right;
+  background-color: white;
+  width: 48%;
+  height: 100vh;
+}
+
+.yenkii-side-modal > .yenkii-side-modal-container .yenkii-side-modal-card {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.hide {
+  display: none;
+}
+
+.yenkii-circle-btn {
+  border-radius: 50% !important;
+}
+
+.yenkii-close-side-modal {
+  z-index: 1;
+  color: #b3b3b3;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.yenkii-banner-image-preview {
+  width: 300px;
+  height: 150px;
+}
+
+.yenkii-product-banner-box {
+  overflow: hidden;
+  /*width: 300px;
+	height: 150px;*/
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.yenkii-product-banner-box > img {
+  width: 100%;
+  height: auto;
+}
+
+.yenkii-banner-size-definition > p {
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.yenkii-action-input-group-top {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.yenkii-action-input-group-top > button {
+  margin-right: 5px;
+}
+
+.yenkii-product-remove-box {
+  cursor: pointer;
+  color: silver;
+}
+
+.yenkii-product-remove-box:hover {
+  color: red;
+}
+
+.yenkii-banner-detail-image-preview {
+  width: 180px;
+  height: 320px;
+}
+
+.yenkii-ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.yenkii-ul li {
+  list-style-type: none;
+}
+
+.yenkii-btn-grey {
+  background-color: #d0d0d0;
+  color: #585858;
+}
+
+.yenkii-btn-grey:hover {
+  background-color: #7d7d7d;
+  color: white;
+}
+
+.yenkii-client-logo-container {
+  display: inline-block;
+  position: absolute;
+  top: -50px;
+  left: 28%;
+  margin-bottom: 10px;
+  border: 5px solid white;
+  -webkit-box-shadow: 0px 2px 6px 0px #888888;
+          box-shadow: 0px 2px 6px 0px #888888;
+}
+
+.yenkii-client-logo-container > img {
+  margin-bottom: 0px !important;
+  float: left;
+  width: 150px;
+  height: 150px;
+}
+
+.yenkii-company-small {
+  font-size: 13px;
+  text-transform: lowercase;
+}
+
+.yenkii-card-heading {
+  display: grid;
+  float: right;
+  margin-left: 5px;
+}
+
+.yenkii-sidebar-nav .nav-link {
+  color: #99a5ad !important;
+}
+
+.yenkii-sidebar-nav .nav-link:hover {
+  color: white !important;
+  background-color: #3870b3  !important;
+}
+
+.glass {
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+}
+
+.glass:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0;
+  background-origin: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.15)), color-stop(50%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0.25)), linear-gradient(to right bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+}
+
+.yenkii-admin-logo {
+  width: 80px;
+}
+
+.pac-container {
+  z-index: 9999 !important;
+}
+
+.tgl {
+  display: none;
+}
+
+.tgl,
+.tgl:after,
+.tgl:before,
+.tgl *,
+.tgl *:after,
+.tgl *:before,
+.tgl + .tgl-btn {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tgl::-moz-selection,
+.tgl:after::-moz-selection,
+.tgl:before::-moz-selection,
+.tgl *::-moz-selection,
+.tgl *:after::-moz-selection,
+.tgl *:before::-moz-selection,
+.tgl + .tgl-btn::-moz-selection {
+  background: none;
+}
+
+.tgl::selection,
+.tgl:after::selection,
+.tgl:before::selection,
+.tgl *::selection,
+.tgl *:after::selection,
+.tgl *:before::selection,
+.tgl + .tgl-btn::selection {
+  background: none;
+}
+
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tgl + .tgl-btn:after,
+.tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+
+.tgl + .tgl-btn:before {
+  display: none;
+}
+
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+}
+
+.tgl-ios + .tgl-btn {
+  background: #e2e2e2;
+  border-radius: 200px;
+  padding: 0px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border: 1px solid #e8eae9;
+}
+
+.tgl-ios + .tgl-btn:after {
+  border-radius: 100px;
+  background: #cecece;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0px 0 rgba(0, 0, 0, 0.08);
+}
+
+.tgl-ios + .tgl-btn:hover:after {
+  will-change: padding;
+}
+
+.tgl-ios + .tgl-btn:active {
+  -webkit-box-shadow: inset 0 0 0 2em #e8eae9;
+          box-shadow: inset 0 0 0 2em #e8eae9;
+}
+
+.tgl-ios + .tgl-btn:active:after {
+  padding-right: .8em;
+}
+
+.tgl-ios:checked + .tgl-btn {
+  background: #86d993;
+}
+
+.tgl-ios:checked + .tgl-btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.tgl-ios:checked + .tgl-btn:active:after {
+  margin-left: -.8em;
+}
+
+.product-feature-badge {
+  margin-left: 5px;
+}
+
+.gold-badge {
+  color: #3e3000 !important;
+  background-color: #e6b200 !important;
+}
+
+.gym-header-user-setting {
+  font-weight: 500;
+}
+
+.gym-navbar-brand {
+  font-family: "Russo";
+  padding-top: 17px !important;
+  font-style: italic;
+}
+
+.gym-navbar-brand::first-letter {
+  color: #4487ce;
+}
+
