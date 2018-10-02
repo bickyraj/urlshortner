@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<div class="login-background">
+            <router-link title="Go To Home Page" :to="{ name: 'home'}" class="mr-1 btn btn-sm" style="position: absolute; top: 12px; left: 12px; z-index: 99999; color: #e6ebf1;"><i class="fas fa-long-arrow-alt-left"></i> Go To Home Page</router-link>
 		    <div class="diagonal-block"></div>
 		    <div class="transparent-background"></div>
 		    <div class="login-container">

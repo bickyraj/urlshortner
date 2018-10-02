@@ -23,6 +23,10 @@ Route::middleware('auth:api')->group(function () {
 Route::get('/test', function() {
     return [1,3,4];
 });
+
+// shorten url function in front page by user.
+Route::post('link', 'LinkController@store');
+
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth:api', 'admin']], function () {
 
     // Role functions.

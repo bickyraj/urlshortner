@@ -13,15 +13,20 @@ const routes = [
         }
     },
     {
+        path: url,
+        name: 'home',
+        component: require('./components/FrontEnd/Index'),
+        abstract: true,
+        meta: {
+            layout: 'front'
+        }
+    },
+    {
         path: "*",
         component: require('./components/Error/404'),
         meta: {
             layout: 'error'
         }
-    },
-    { 
-        path: url,
-        redirect: admin_url
     },
     { 
         path: url + 'login', 

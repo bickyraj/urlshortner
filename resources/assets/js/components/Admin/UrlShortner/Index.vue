@@ -312,7 +312,9 @@
                     customClass: 'crm-swal',
                     confirmButtonText: 'Ok',
                   }).then((result) => {
-                    if (result.value) {}
+                    if (result.value) {
+                      self.fetchShortUrlList();
+                    }
                   })
                 }
               });
@@ -335,6 +337,7 @@
               self.table_items.push(link_data);
               $(form)[0].reset();
               self.hideModal();
+              self.fetchShortUrlList();
               self.$toastr.s("A link has been added.");
             } else {
               self.$toastr.i("This link already exists.");
