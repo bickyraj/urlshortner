@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="{{ asset('assets/global/plugins/simple-line-icons/simple-line-icons.min.css') }}" rel="stylesheet" type="text/css" />
     
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css') }}">
-    <link href="{{ asset('css/admin-style.css') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('css/login-style.css') }}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('public/css/animate.css') }}">
+    <link href="{{ asset('public/css/admin-style.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/css/login-style.css') }}" rel="stylesheet" type="text/css" />
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
   <div id="app"></div>
-  <script src="{{ asset('js/app.js') }}"></script>
+  <script src="{{ asset('public/js/app.js') }}"></script>
 </body>
 </html>
