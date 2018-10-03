@@ -46,8 +46,6 @@ class LoginController extends Controller
     {
         if (Auth::user()->isAdmin()) {
             return '/admin';
-        } elseif (Auth::user()->isClient()) {
-            return '/client';
         }
         
         return '/login';
@@ -61,10 +59,11 @@ class LoginController extends Controller
         // Check if a user with the specified email exists
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
             // Send an internal API request to get an access token
+            $client = DB::table('oauth_clients')->where('id', 2)->first();
             $data = [
                 'grant_type' => 'password',
                 'client_id' => '2',
-                'client_secret' => 'YrCa7qRQNmC92PPZpXjemlcMysBptKOYCKpRlBmL',
+                'client_secret' => $client->secret,
                 'username' => $email,
                 'password' => $password,
             ];
