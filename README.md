@@ -1,8 +1,8 @@
 ## Requirements
-  PHP 7.x
-  Laravel 5.5 or newer
-  PostgreSQL 9.5 or newer
-  Redis 
+  -PHP 7.x
+  -Laravel 5.5 or newer
+  -PostgreSQL 9.5 or newer
+  -Redis 
 
 ## Introduction
 
