@@ -1,10 +1,10 @@
 ## Requirements
 
 <ul>
-	<li>-PHP 7 or greater</li>
-	<li>-Laravel 5.5 or newer</li>
-	<li>-PostgreSQL 9.5 or newer</li>
-	<li>-Redis </li>
+	<li>PHP 7 or greater</li>
+	<li>Laravel 5.5 or newer</li>
+	<li>PostgreSQL 9.5 or newer</li>
+	<li>Redis </li>
 </ul>
 
 ## Introduction
@@ -13,10 +13,12 @@
 
 ## Features
 
-  Web-based interface.
-  Blacklist for input URLs with regex support.
-  Url shortening on front end.
-  Shortened URLs redirects to the original URL with a HTTP 302 redirect.
-  Counter for shortened URLs on hit.
-  Clients can specify an expiration time for shortened URLs.
-  Admin authentication.
+<ul>
+	<li>Web-based interface.</li>
+	<li>Blacklist for input URLs with regex support.</li>
+	<li>Url shortening on front end.</li>
+	<li>Shortened URLs redirects to the original URL with a HTTP 302 redirect.</li>
+	<li>Counter for shortened URLs on hit.</li>
+	<li>Clients can specify an expiration time for shortened URLs.</li>
+	<li>Admin authentication.</li>
+</ul>
