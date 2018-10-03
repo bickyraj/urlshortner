@@ -12,13 +12,22 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        	DB::table('users')->insert([
-                'name' => 'admin',
-                'email' => 'admin@test.com',
-                'firstname' => 'admin',
-                'lastname' => 'admin',
-                'role_id' => 1,
-                'password' => bcrypt('test123'),
-            ]);
+        
+        // add admin to users table.
+        DB::table('users')->insert([
+            'name' => 'admin',
+            'email' => 'admin@test.com',
+            'firstname' => 'admin',
+            'lastname' => 'admin',
+            'role_id' => 1,
+            'password' => bcrypt('test123'),
+        ]);
+
+        // add admin role to roles table
+        DB::table('roles')->insert([
+            'name' => 'admin',
+            'status' => 1,
+        ]);
+
     }
 }
