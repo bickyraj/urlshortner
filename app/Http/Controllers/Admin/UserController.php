@@ -163,11 +163,4 @@ class UserController extends Controller
     {
         return auth()->user();
     }
-
-    public function generateSlug($title)
-    {
-        $slug = Str::slug($title);
-        $count = DB::table('clients')->whereRaw("slug RLIKE '^{$slug}(-[0-9]+)?$'")->count();
-        return $count ? "{$slug}-{$count}" : $slug;
-    }
 }
