@@ -137,6 +137,7 @@ class LinkController extends Controller
         $url = Link::where('code', $code)->first();
 
         if (isset($url) && !empty($url)) {
+            $url->increment('counter');
             return redirect($url->url);
         }
 

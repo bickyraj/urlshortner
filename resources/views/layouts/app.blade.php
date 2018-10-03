@@ -7,10 +7,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script>window.laravel = { 
     csrfToken: '{{ csrf_token() }}',
-    baseUrl: '{{ url('') }}'
+    baseUrl: '{{ url('') }}',
+    vueBaseUrl: '{{ env("VUE_BASE_URL") }}',
      }</script>
 
     <title>Url Shortner - Admin</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{{ asset('favicon.ico') }}}">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <!-- <link href="{{ asset('assets/global/plugins/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" /> -->

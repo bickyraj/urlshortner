@@ -19,6 +19,8 @@ class Link extends Resource
             'id' => $this->id,
             'url' => $this->url,
             'code' => $this->code,
+            'counter' => $this->counter,
+            'status' => $this->status,
         ];
     }
 }

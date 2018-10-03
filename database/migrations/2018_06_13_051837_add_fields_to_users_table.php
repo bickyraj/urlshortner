@@ -22,6 +22,7 @@ class AddFieldsToUsersTable extends Migration
             $table->string('phone')->nullable();
             $table->integer('first_login')->nullable();
             $table->integer('last_login')->nullable();
+            $table->date('deleted_at')->nullable();
             $table->integer('status')->default(1);
         });
     }

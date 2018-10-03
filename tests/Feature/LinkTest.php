@@ -3,11 +3,11 @@
 namespace Tests\Feature;
 
 use Tests\TestCase;
-use App\Role;
+use App\Link;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
-class BasicTest extends TestCase
+class LinkTest extends TestCase
 {
     /**
      * A basic test example.
@@ -16,9 +16,7 @@ class BasicTest extends TestCase
      */
     public function testExample()
     {
-    	$member = factory(Role::class, 3)->create();
+    	factory(Link::class, 3)->create();
         $this->assertTrue(true);
-		// $member = new ClientMember(['name'=>'Tesla']);
-		// $this->assertEquals('Tesla', $member->name);
     }
 }

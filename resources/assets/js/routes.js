@@ -1,5 +1,5 @@
-let url = '/laravelapps/laravel5/demo/'
-let admin_url = '/laravelapps/laravel5/demo/admin/'
+let url = window.laravel.vueBaseUrl
+let admin_url = url + '/admin/'
 // let url = '/'
 // let admin_url = '/admin/'
 const routes = [

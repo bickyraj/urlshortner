@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Roboto-Light';
-  src: url("/laravelapps/laravel5/demo/public/fonts/roboto/Roboto-Light.ttf");
+  src: url("../fonts/roboto/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: 'Roboto-Regular';
-  src: url("/laravelapps/laravel5/demo/public/fonts/roboto/Roboto-Regular.ttf");
+  src: url("../fonts/roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Racing-Sans';
-  src: url("/laravelapps/laravel5/demo/public/fonts/racing_sans_one/RacingSansOne-Regular.ttf");
+  src: url("../fonts/racing_sans_one/RacingSansOne-Regular.ttf");
 }
 
 @font-face {
   font-family: 'Russo';
-  src: url("/laravelapps/laravel5/demo/public/fonts/russo_one/RussoOne-Regular.ttf");
+  src: url("../fonts/russo_one/RussoOne-Regular.ttf");
 }
 
 body {
@@ -28,7 +28,7 @@ h3 {
 
 .login-background {
   height: 100vh;
-  background-image: url("/laravelapps/laravel5/demo/public/img/wallpapers/wallpaper.jpg");
+  background-image: url("../img/wallpapers/wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -327,4 +327,3 @@ h3 {
 .forget-password-block {
   padding-top: 2px;
 }
-

@@ -109,7 +109,7 @@
     <!-- Info modal -->
     <b-modal class="ess-modal" id="modalInfo" ref="editModal" hide-footer @hide="resetModal" :title="modalInfo.title">
       <!-- <pre>{{ modalInfo.data }}</pre> -->
-      <form @submit.prevent="editLink" :row="modalInfo.row" ref="editLinkForm">
+      <form :row="modalInfo.row" ref="editLinkForm">
         <input type="hidden" name="id" :value="modalInfo.data.id">
         <div class="form-group">
           <label for="exampleFormControlInput1">Url</label>
@@ -119,6 +119,11 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Short Link</label>
           <div><b>{{ appUrl + '/' + modalInfo.data.code }}</b></div>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Counter</label>
+          <div><b>{{ modalInfo.data.counter }}</b></div>
         </div>
         <!-- <b-btn class="mt-3 pull-right" variant="primary" type="submit">Update</b-btn>
         <b-btn class="mt-3 pull-right" style="margin-right:5px;" variant="default" @click="hideLinkModal">Cancel</b-btn> -->
@@ -229,6 +234,7 @@
                 rObj['id'] = obj.id;
                 rObj['url'] = obj.url;
                 rObj['code'] = obj.code;
+                rObj['counter'] = obj.counter;
                 return rObj;
               })
               self.loading = false;
@@ -333,6 +339,7 @@
                 id: link.id,
                 url: link.url,
                 code: link.code,
+                counter: link.counter,
               }
               self.table_items.push(link_data);
               $(form)[0].reset();
@@ -367,6 +374,7 @@
               rObj['id'] = obj.id;
               rObj['url'] = obj.url;
               rObj['code'] = obj.code;
+              rObj['counter'] = obj.counter;
               return rObj;
             })
             vm.loading = false;

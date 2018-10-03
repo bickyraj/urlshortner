@@ -27,7 +27,7 @@
 			          </b-col>
 			        </div>
 			        <div class="card-body" v-show="shortUrlLink != ''">
-			        	The Short Url is for <strong><i>{{ longUrl }}</i></strong> is
+			        	The short url for <strong><i>{{ longUrl }}</i></strong> is
 			        	<a :href="appUrl + '/' + shortUrlLink" target="_blank">{{ appUrl + '/' + shortUrlLink }}</a>
 			        </div>
 			      </b-card>
