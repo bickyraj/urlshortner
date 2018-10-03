@@ -54,6 +54,7 @@ class LinkController extends Controller
             if (!$exists) {
                 $link = new Link;
                 $link->url = $request->input('url');
+                $link->expiration_time = $request->input('expiration_time');
 
                 if ($link->save()) {
                     $link->code = $this->getShortCode($link->id);

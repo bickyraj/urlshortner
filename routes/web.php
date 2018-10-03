@@ -20,6 +20,7 @@ Route::get('/logout', function () {
 
 Auth::routes();
 
+Route::get('/shortUrl/{code}', 'Admin\LinkController@getActualUrl');
 Route::get('/login', function () {
 	return view('layouts.app');
 });
@@ -30,7 +31,6 @@ Route::get('sendNotification', function () {
     return "event fired";
 });
 
-// Route::get('/{code}', ['as' => 'get', 'uses' => 'Admin\LinkController@getActualUrl']);
 Route::get('{any}', function () {
     return view('layouts.app');
 })->where('any', '.*');

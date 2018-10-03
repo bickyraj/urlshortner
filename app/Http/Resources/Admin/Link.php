@@ -21,6 +21,7 @@ class Link extends Resource
             'code' => $this->code,
             'counter' => $this->counter,
             'status' => $this->status,
+            'expiration_time' => $this->expiration_time,
         ];
     }
 }

@@ -12,13 +12,17 @@
 				<a href="" class="navbar-brand gym-navbar-brand" target="_self"> Url Shortner </a>
 			</b-row>
 			  <b-row class="justify-content-md-center">
-			    <b-col cols="6" class="col-centered">
+			    <b-col cols="9" class="col-centered">
 			      <b-card class="mb-2">
 			        <div class="card-title">
 			          <b-col cols="12">
 			          	<form @submit.prevent="addLink" ref="addLinkForm">
 				            <div class="input-group">
 				              <input type="url" ref="lookupShortUrl" name="url" class="form-control" placeholder="Enter url" required>
+				              <div class="input-group-text">Expiration Time</div>
+				              <div class="input-group-append">
+			                    <date-picker v-model="date" autocomplete="off" name="expiration_time" :config="config"></date-picker>
+				              </div>
 				              <div class="input-group-append">
 				                <button type="submit" class="btn btn-outline-success">Shorten Url</button>
 				              </div>
@@ -28,7 +32,7 @@
 			        </div>
 			        <div class="card-body" v-show="shortUrlLink != ''">
 			        	The short url for <strong><i>{{ longUrl }}</i></strong> is
-			        	<a :href="appUrl + '/' + shortUrlLink" target="_blank">{{ appUrl + '/' + shortUrlLink }}</a>
+			        	<a :href="appUrl + '/shortUrl/' + shortUrlLink" target="_blank">{{ appUrl + '/shortUrl/' + shortUrlLink }}</a>
 			        </div>
 			      </b-card>
 			    </b-col>
@@ -43,6 +47,13 @@
 				appUrl: this.$root.baseUrl,
 				shortUrlLink: '',
 				longUrl: '',
+				date: '',
+				config: {
+				  format: 'YYYY-MM-DD',
+				  useCurrent: false,
+				  showClear: true,
+				  showClose: true,
+				}
 			}
 		},
 		methods: {

@@ -1,4 +1,4 @@
-let url = window.laravel.vueBaseUrl + '/admin/'
+let url = window.laravel.vueBaseUrl + 'admin/'
 // let url = '/admin/'
 export default {
   items: [

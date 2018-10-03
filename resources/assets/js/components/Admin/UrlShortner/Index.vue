@@ -44,7 +44,7 @@
               </thead>
               <tbody>
                 <tr>
-                  <td><a :href="appUrl + '/' + shortUrlData.code" target="_blank">{{ appUrl + '/' + shortUrlData.code }}</a></td>
+                  <td><a :href="appUrl + '/shortUrl/' + shortUrlData.code" target="_blank">{{ appUrl + '/shortUrl/' + shortUrlData.code }}</a></td>
                   <td>{{ shortUrlData.url }}</td>
                 </tr>
               </tbody>
@@ -75,6 +75,10 @@
                     <label for="exampleFormControlInput1">Url</label>
                     <input type="url" name="url" class="form-control" placeholder="" required>
                   </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Expiration Time</label>
+                    <date-picker v-model="date" autocomplete="off" name="expiration_time" :config="config"></date-picker>
+                  </div>
                   <b-btn class="mt-3 pull-right" variant="primary" type="submit">Create Short Link</b-btn>
                   <b-btn class="mt-3 pull-right" style="margin-right:5px;" variant="default" @click="hideModal">Cancel</b-btn>
                 </form>
@@ -95,7 +99,7 @@
             <tbody v-if="table_items.length > 0" v-show="!loading">
               <tr v-for="(link, index) in table_items" :key="link.id">
                 <td>{{ link.url }}</td>
-                <td><a :href="appUrl + '/' + link.code" target="_blank">{{ appUrl + '/' + link.code }}</a></td>
+                <td><a :href="appUrl + '/shortUrl/' + link.code" target="_blank">{{ appUrl + '/shortUrl/' + link.code }}</a></td>
                 <td>
                   <b-button size="sm" @click.stop="info(link, index, $event.target)" class="mr-1 btn-success">
                     View
@@ -130,12 +134,16 @@
         <hr>
         <div class="form-group">
           <label for="exampleFormControlInput1">Short Link</label>
-          <div><b>{{ appUrl + '/' + modalInfo.data.code }}</b></div>
+          <div><b>{{ appUrl + '/shortUrl/' + modalInfo.data.code }}</b></div>
         </div>
         <hr>
         <div class="form-group">
           <label for="exampleFormControlInput1">Counter</label>
           <div><b>{{ modalInfo.data.counter }}</b></div>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Expiration Time</label>
+          <div><b>{{ modalInfo.data.expiration_time }}</b></div>
         </div>
         <!-- <b-btn class="mt-3 pull-right" variant="primary" type="submit">Update</b-btn>
         <b-btn class="mt-3 pull-right" style="margin-right:5px;" variant="default" @click="hideLinkModal">Cancel</b-btn> -->
@@ -177,6 +185,13 @@
           content: '',
           data: []
         },
+        date: '',
+        config: {
+          format: 'YYYY-MM-DD',
+          useCurrent: false,
+          showClear: true,
+          showClose: true,
+        }
       }
     },
     created() {
@@ -253,6 +268,7 @@
                 rObj['url'] = obj.url;
                 rObj['code'] = obj.code;
                 rObj['counter'] = obj.counter;
+                rObj['expiration_time'] = obj.expiration_time;
                 return rObj;
               })
               self.loading = false;
@@ -393,6 +409,7 @@
               rObj['url'] = obj.url;
               rObj['code'] = obj.code;
               rObj['counter'] = obj.counter;
+              rObj['expiration_time'] = obj.expiration_time;
               return rObj;
             })
             vm.loading = false;

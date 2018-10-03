@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Link extends Model
 {
     protected $fillable = [
-        'url', 'code', 'counter', 'status'
+        'url', 'code', 'counter', 'status', 'expiration_time'
     ];
 }
