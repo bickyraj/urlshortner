@@ -1,5 +1,17 @@
 <template>
   <div class="animated">
+    <b-row v-if="notification != 0">
+      <b-col>
+        <b-card class="mb-2">
+          <div class="card-title">
+            <b-col cols="5">
+              <h6>Notification from the socket</h6>
+              <h5>{{ notification }}</h5>
+            </b-col>
+          </div>
+        </b-card>
+      </b-col>
+    </b-row>
     <b-row>
       <b-col>
         <b-card class="mb-2">
@@ -149,6 +161,7 @@
   export default {
     data() {
       return {
+        notification: 0,
         selectedUrl: '',
         shortUrlList: [],
         shortUrlData: null,
@@ -167,20 +180,25 @@
       }
     },
     created() {
+      let self = this;
       this.fetchLinks();
       this.fetchShortUrlList();
-      // let socket = io(`http://localhost:3000`);
+      let socket = io(`http://localhost:3000`);
 
-      // socket.on('connect', function() {
-      //   if (socket.connect) {
-      //     console.log('connected bro');
-      //   }
-      // });
-      // socket.on("test-channel:App\\Events\\TestNotification", function(message){
-      //     // increase the power everytime we load test route
-      //     // alert(parseInt(message.data.power))
-      //     console.log(message.data.users);
-      // });
+      socket.on('connect', function() {
+        if (socket.connect) {
+          console.log('connected successfully');
+        }
+      });
+      socket.on("test-channel:App\\Events\\TestNotification", function(message){
+          // increase the power everytime we load test route
+          // alert(parseInt(message.data.power))
+
+          self.notification ++; 
+          self.$toastr.s('You just called an event.');
+
+          console.log(message.data.links);
+      });
     },
     methods: {
       lookupShortUrl(event) {

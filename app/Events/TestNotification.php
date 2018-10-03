@@ -3,7 +3,7 @@
 namespace App\Events;
 
 use Illuminate\Broadcasting\Channel;
-use App\User;
+use App\Link;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Broadcasting\PresenceChannel;
@@ -23,10 +23,10 @@ class TestNotification implements ShouldBroadcast
      */
     public function __construct()
     {
-        $users = User::all();
+        $links = Link::all();
         $this->data = array(
             'power' => '10',
-            'users' => $users
+            'links' => $links
         );
     }
 
