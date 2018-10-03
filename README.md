@@ -1,8 +1,11 @@
 ## Requirements
-  -PHP 7.x
-  -Laravel 5.5 or newer
-  -PostgreSQL 9.5 or newer
-  -Redis 
+
+<ul>
+	<li>-PHP 7 or greater</li>
+	<li>-Laravel 5.5 or newer</li>
+	<li>-PostgreSQL 9.5 or newer</li>
+	<li>-Redis </li>
+</ul>
 
 ## Introduction
 
